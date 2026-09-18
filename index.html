@@ -3,51 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aula 8: interação js html</title>
-    <link rel="stylesheet" href="./css/estilo.css">
+    <title>aula 9: interação js html</title>
 </head>
 <body>
-    <h1>data:11/09/2026</h1>
-    <table border="1">
-        <tr>
-            <td>
-                <button id="ant">anterior</button>
-                <button id="prox">proximo</button>
-            </td>
-            <td rowspan="4">
-                <img id="foto" src="./img/foto1.jpg" width="350px" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <select id="combobox">
-                    <option value="1">mel</option>
-                    <option value="2">balu</option>
-                    <option value="3">zoey</option>
-                    <option value="4">aia</option>
-                    <option value="5">pitomba</option>
-                    <option value="6">bombom</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li id="li1">mel</li>
-                    <li id="li2">balu</li>
-                    <li id="li3">zoey</li>
-                    <li id="li4">aia</li>
-                    <li id="li5">pitomba</li>
-                    <li id="li6">bombom</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="range" id="opacidade" min="0" max="1" step="0.1" value="1">
-            </td>
-        </tr>
-    </table>
-    <script src="./js/app1.js" defer></script>
+    <h1>data:18/09/2026</h1>
+    <hr/>
+    <form action="#" id="cadastro" method="post">
+        <table>
+            <tr>
+                <td>nome</td>
+                <td>
+                    <input type="text" required name="nome" minlength="3"/>
+                </td>
+            </tr>
+            <tr>
+                <td>data de nascimento</td>
+                <td>
+                    <input type="date" name="nasc">
+                </td>
+            </tr>
+            <tr>
+                <td>whatsapp</td>
+                <td>
+                    <input type="tel" name="whatsapp">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="adicionar">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr/>
+    <ul id="lista">
+        <li>lista vazia</li>
+    </ul>
+    <script src="./js/app2.js" defer></script>
 </body>
 </html>
