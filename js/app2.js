@@ -26,5 +26,37 @@ class animal{
     }
 }
 
-const balu = new animal("Balu Brasil");
+class cachorro extends animal{
+    constructor(nome, cor="não tem", altura=0.3, peso=0, raca="Vira-Lata"){
+        super(nome,cor,altura,peso,raca);
+        this.patas = 4;
+    }
+    latir(){
+        alert("au au");
+    }
+    saudar(){
+        let msg = super.saudar();
+        msg = msg +"\nSou um Dog!";
+        alert(msg);
+    }
+
+}
+class passaro extends animal{
+    constructor(nome, cor="não tem", altura=0.3, peso=0, raca="concriz"){
+        super(nome,cor,altura,peso,raca);
+        this.patas = 2;
+    }
+    latir(){
+        alert("fiu fiu");
+    }
+    saudar(){
+        let msg = super.saudar();
+        msg = msg +"\nSou um Bird!";
+        alert(msg);
+    }
+
+}
+
+const balu = new cachorro("Balu Brasil");
 const mel = new animal("mel", "amarelo", 1.10, 45, "LuLu");
+const leleco = new passaro("leleco Brasil", undefined, undefined, undefined, "concriz");
